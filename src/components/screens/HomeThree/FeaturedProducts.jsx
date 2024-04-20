@@ -9,12 +9,12 @@ export function FeaturedProducts() {
       {/* image div  */}
 
       <div className="h-[364px] md:w-full w-80 rounded-lg border-gray-200 border-r border-solid relative">
-        <div className="absolute top-5 left-5 z-10 flex flex-col  gap-2">
+        <div className="absolute md:top-24 top-5 left-5 z-10 flex flex-col  gap-2">
           <p className=" text-red-700 tracking-[-0.24px] ">Only This Week</p>
           <p className="text-black-900 tracking-[-0.24px] text-xl font-bold">
             A smart store for <br /> every people
           </p>
-          <p className="text-[#6B7280 tracking-[-0.24px text-xs]">
+          <p className="text-[#6B7280 tracking-[-0.24px text-xs] mobileM:hidden">
             Feed your family the best
           </p>
 

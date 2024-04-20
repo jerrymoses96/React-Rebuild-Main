@@ -18,13 +18,13 @@ export function NewArrivalsBanner() {
           >
             Only This Week
           </Heading>
-          <Heading size="6xl" as="h3" className="mt-[17px] tracking-[-1.12px]">
+          <Heading size="6xl" as="h3" className="mt-[17px] tracking-[-1.12px] ">
             Provides you the quality
           </Heading>
           <Heading size="6xl" as="h3" className="mt-px tracking-[-1.12px]">
             that’s you expected
           </Heading>
-          <Text as="p" className="mt-[7px] tracking-[-0.32px]">
+          <Text as="p" className="mt-[7px] tracking-[-0.32px] mobileM:hidden">
             Feed your family the best
           </Text>
           <Button
@@ -35,7 +35,7 @@ export function NewArrivalsBanner() {
                 alt="i.klb-icon-move-right"
               />
             }
-            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] sm:min-w-full"
+            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] "
           >
             Shop Now
           </Button>
@@ -61,7 +61,7 @@ export function NewArrivalsBanner() {
           <Heading size="6xl" as="h3" className="tracking-[-1.12px]">
             center of the city
           </Heading>
-          <Text as="p" className="mt-2 tracking-[-0.32px]">
+          <Text as="p" className="mt-2 tracking-[-0.32px] mobileM:hidden">
             Only this week. Don’t miss...
           </Text>
           <Button
@@ -72,7 +72,7 @@ export function NewArrivalsBanner() {
                 alt="i.klb-icon-move-right"
               />
             }
-            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] sm:min-w-full"
+            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] "
           >
             Shop Now
           </Button>

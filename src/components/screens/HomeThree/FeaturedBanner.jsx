@@ -10,7 +10,7 @@ export function FeaturedBanner() {
           alt="only_this_week"
           className="justify-center h-[220px] w-full sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute rounded-md"
         />
-        <div className="flex flex-col items-start justify-start w-[38%] h-max left-[5%] bottom-0 top-0 m-auto absolute">
+        <div className="flex flex-col items-start justify-start  h-max left-[5%] bottom-0 top-0 m-auto absolute">
           <Text
             size="md"
             as="p"
@@ -35,7 +35,7 @@ export function FeaturedBanner() {
                 alt="i.klb-icon-move-right"
               />
             }
-            className="mt-4 gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] sm:min-w-full"
+            className="mt-4 gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] "
           >
             Shop Now
           </Button>
@@ -47,7 +47,7 @@ export function FeaturedBanner() {
           alt="banner18jpg_one"
           className="justify-center h-[220px] w-full sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute rounded-md"
         />
-        <div className="flex flex-col items-start justify-start w-[46%] h-max left-[5%] bottom-0 top-0 m-auto absolute">
+        <div className="flex flex-col items-start justify-start  h-max left-[5%] bottom-0 top-0 m-auto absolute">
           <Text
             size="md"
             as="p"
@@ -72,7 +72,7 @@ export function FeaturedBanner() {
                 alt="i.klb-icon-move-right"
               />
             }
-            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] sm:min-w-full"
+            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] "
           >
             Shop Now
           </Button>
@@ -84,7 +84,7 @@ export function FeaturedBanner() {
           alt="banner19jpg_one"
           className="justify-center h-[220px] w-full sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute rounded-md"
         />
-        <div className="flex flex-col items-start justify-start w-[46%] h-max left-[5%] bottom-0 top-0 m-auto absolute">
+        <div className="flex flex-col items-start justify-start  h-max left-[5%] bottom-0 top-0 m-auto absolute">
           <Text
             size="md"
             as="p"
@@ -109,7 +109,7 @@ export function FeaturedBanner() {
                 alt="i.klb-icon-move-right"
               />
             }
-            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] sm:min-w-full"
+            className="mt-[17px] gap-[5px] !text-gray-900_02 tracking-[-0.24px] font-bold border-gray-200 border border-solid min-w-[108px] rounded-[17px] "
           >
             Shop Now
           </Button>
