@@ -1,12 +1,14 @@
 import React from "react";
 import { Button, Heading, Img, Text } from "../..";
 import renderStars from "../../helpers/RenderStars";
+import CountdownTimer from "components/helpers/CountdownTimer";
 
 export function DealsOfTheDay() {
   return (
-    <div className="flex flex-row md:flex-col justify-start items-center w-full mt-5 gap-[30px] md:gap-5">
-      <div className="flex flex-col w-[33%] md:w-full pt-5 gap-5 md:gap-[19px] border-gray-200 border border-solid rounded-lg">
-        <div className="flex flex-row justify-center w-[91%] md:w-full mx-auto">
+    <div className="flex flex-row xl:flex-col justify-start items-center w-full mt-5 gap-[30px] md:gap-5">
+      <div className="flex flex-col w-[33%] xl:w-full  md:gap-[19px] border-gray-200 border border-solid rounded-lg">
+        {/* 1 st product  */}
+        <div className="flex flex-row justify-center w-full  p-5">
           <div className="flex flex-col items-start justify-start w-full gap-2.5">
             <div className="flex flex-row sm:flex-col justify-start items-start w-full gap-5 sm:gap-5">
               <div className="h-[185px] w-[185px] mt-[5px] sm:mt-0 relative">
@@ -78,73 +80,47 @@ export function DealsOfTheDay() {
                     $1.99
                   </Text>
                 </div>
-                <div className="flex flex-row justify-between w-full mt-2.5 p-2 border-deep_purple-600 border border-solid rounded-[17px]">
-                  <a href="#" className="ml-1.5">
-                    <Text
-                      as="p"
-                      className="!text-deep_purple-600 tracking-[-0.26px] !font-medium"
-                    >
-                      Add to cart
-                    </Text>
-                  </a>
-                  <Img
-                    src="images/img_i_klb_icon_plus.svg"
-                    alt="add_to_cart"
-                    className="h-[16px] mr-0.5"
-                  />
-                </div>
+                <Button
+                  color="deep_purple_600"
+                  size="lg"
+                  variant="outline"
+                  rightIcon={
+                    <Img
+                      src="images/img_i_klb_icon_plus.svg"
+                      alt="i.klb-icon-plus"
+                    />
+                  }
+                  className=" gap-[35px] tracking-[-0.26px] mt-3 font-medium rounded-[17px]"
+                >
+                  Add to cart
+                </Button>
               </div>
             </div>
-            <div className="flex flex-row justify-start w-[80%] md:w-full gap-1">
-              <Button
-                color="gray_100"
-                className="tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-              >
-                84
-              </Button>
-              <Button
-                color="gray_100"
-                className="tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-              >
-                06
-              </Button>
-              <div className="flex flex-row justify-start w-[81%]">
-                <div className="flex flex-col items-end justify-start w-full">
-                  <div className="flex flex-row justify-start w-full">
-                    <Button
-                      color="gray_100"
-                      className="tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-                    >
-                      59
-                    </Button>
-                  </div>
-                  <div className="flex flex-row justify-end items-center w-[87%] md:w-full mt-[-26px]">
-                    <Text
-                      size="2xl"
-                      as="p"
-                      className="!text-black-900 tracking-[-0.32px] !font-normal"
-                    >
-                      :
-                    </Text>
-                    <Button
-                      color="gray_100"
-                      className="ml-2 tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-                    >
-                      59
-                    </Button>
-                    <Text
-                      size="s"
-                      as="p"
-                      className="ml-4 !text-blue_gray-300 tracking-[-0.32px]"
-                    >
-                      Remains until the end of the offer
-                    </Text>
-                  </div>
-                </div>
+
+            <div className="flex items-center sm:flex-col sm:items-start sm:gap-2">
+              <div className="flex gap-1 items-center">
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  84
+                </button>
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  06
+                </button>
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  59
+                </button>
+                <div>:</div>
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  59
+                </button>
               </div>
+
+              <p className="text-[11px] ml-2 sm:ml-0 text-[#9CA3AF]">
+                Remains until the end of the offer
+              </p>
             </div>
           </div>
         </div>
+        {/* 2 nd product  */}
         <div className="flex flex-row justify-center w-full p-5 border-gray-200 border-t border-solid">
           <div className="flex flex-col items-start justify-start w-full gap-2.5">
             <div className="flex flex-row sm:flex-col justify-start items-start w-full gap-5 sm:gap-5">
@@ -230,64 +206,40 @@ export function DealsOfTheDay() {
                       alt="i.klb-icon-plus"
                     />
                   }
-                  className="w-full gap-[35px] tracking-[-0.26px] font-medium rounded-[17px]"
+                  className=" gap-[35px] tracking-[-0.26px] font-medium rounded-[17px]"
                 >
                   Add to cart
                 </Button>
               </div>
             </div>
-            <div className="flex flex-row justify-start w-[80%] md:w-full gap-1">
-              <Button
-                color="gray_100"
-                className="tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-              >
-                46
-              </Button>
-              <Button
-                color="gray_100"
-                className="tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-              >
-                06
-              </Button>
-              <div className="flex flex-row justify-start w-[81%]">
-                <div className="flex flex-col items-end justify-start w-full">
-                  <div className="flex flex-row justify-start w-full">
-                    <Button
-                      color="gray_100"
-                      className="tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-                    >
-                      59
-                    </Button>
-                  </div>
-                  <div className="flex flex-row justify-end items-center w-[87%] md:w-full mt-[-26px]">
-                    <Text
-                      size="2xl"
-                      as="p"
-                      className="!text-black-900 tracking-[-0.32px] !font-normal"
-                    >
-                      :
-                    </Text>
-                    <Button
-                      color="gray_100"
-                      className="ml-2 tracking-[-0.32px] font-semibold border-gray-200 border border-solid min-w-[26px] rounded-md"
-                    >
-                      59
-                    </Button>
-                    <Text
-                      size="s"
-                      as="p"
-                      className="ml-4 !text-blue_gray-300 tracking-[-0.32px]"
-                    >
-                      Remains until the end of the offer
-                    </Text>
-                  </div>
-                </div>
+
+            {/* new  */}
+            <div className="flex  items-center sm:flex-col sm:items-start sm:gap-2">
+              <div className="flex gap-1 items-center">
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  84
+                </button>
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  06
+                </button>
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  59
+                </button>
+                <div>:</div>
+                <button className="text-[#4B5563] border border-#E5E7EB font-semibold text-[10px] bg-[#F3F4F6] p-1.5 rounded-md">
+                  59
+                </button>
               </div>
+
+              <p className="text-[11px] ml-2 sm:ml-0 text-[#9CA3AF]">
+                Remains until the end of the offer
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center w-[66%] md:w-full p-[33px] sm:p-5 border-red-700 border-4 border-solid rounded-lg">
+      {/* 3 rd product  */}
+      <div className="flex flex-row justify-center w-[66%] xl:w-full p-[33px] sm:p-5 border-red-700 border-4 border-solid rounded-lg">
         <div className="flex flex-row md:flex-col justify-start items-center w-full mt-[5px] gap-[25px] md:gap-5">
           <div className="h-[465px] w-[465px] sm:w-full relative">
             <Img
