@@ -3,7 +3,7 @@ import { Img, Slider } from "../../..";
 
 export function Slider2(props) {
   return (
-    <div className="flex flex-col  justify-between items-center wrapper md:gap-10 relative">
+    <div className="flex flex-col tablet:hidden  justify-between items-center wrapper md:gap-10 relative">
       <Slider
         autoPlay
         autoPlayInterval={2000}
@@ -24,10 +24,10 @@ export function Slider2(props) {
         ref={props.sliderRef1}
         className="w-full relative"
         items={[
-          <div key="slider_content" className="relative">
-            <div className="absolute top-[50%] left-14 transform -translate-y-1/2 w-[50%]">
+          <div key="slider_content" className="relative ">
+            <div className="absolute  top-[50%] left-14 transform -translate-y-1/2 w-[50%]">
               <p
-                className="text-lg font-bold rounded-xl px-2 py-1 w-[200px] mb-2"
+                className="text-lg font-bold md:text-sm sm:text-xs tablet:hidden rounded-xl px-2 py-1 w-[200px] mb-2"
                 style={{
                   background:
                     "linear-gradient(90deg, rgba(22, 163, 74, 0.5) 0%, rgba(34, 197, 94, 0) 60%)",
@@ -35,19 +35,19 @@ export function Slider2(props) {
               >
                 Weekend Discount
               </p>
-              <h2 className="text-4xl font-bold mb-2">
+              <h2 className="text-4xl md:text-3xl sm:text-2xl font-bold mb-2">
                 Get the best quality <br /> products at the lowest <br /> prices
               </h2>
-              <p className="">
+              <p className="md:text-xs sm:hidden">
                 We have prepared special discounts for you on organic breakfast
               </p>
 
-              <p>products.</p>
-              <div className="flex gap-3 items-center mt-4">
-                <button className="bg-[#634C9F] w-[130px] h-[40px] rounded-xl mt-2 text-[#FFFFFF]">
+              <p className="md:text-xs sm:hidden">products.</p>
+              <div className="flex sm:flex-col sm:items-start gap-3 items-center mt-4">
+                <button className="bg-[#634C9F] sm:w-[100px] sm:text-sm w-[130px] h-[40px] rounded-xl mt-2 text-[#FFFFFF]">
                   Shop Now
                 </button>
-                <div>
+                <div className="">
                   <div className="flex items-baseline gap-1 ">
                     <p className="text-[#DC2626] text-xl font-bold">$21.67</p>
                     <p className="text-[#111827] font-medium line-through">
@@ -55,7 +55,7 @@ export function Slider2(props) {
                     </p>
                   </div>
                   <div>
-                    <p className="text-[#030712] text-xs">
+                    <p className="text-[#030712] text-xs sm:hidden">
                       Don't miss this limited time offer.
                     </p>
                   </div>
@@ -65,7 +65,7 @@ export function Slider2(props) {
             <Img
               src="images/img_slider_03_jpg.png"
               alt="slider03jpg_one"
-              className="md:h-auto mx-auto object-cover rounded-md"
+              className=" mx-auto object-cover rounded-md"
             />
           </div>,
         ]}

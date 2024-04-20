@@ -289,7 +289,7 @@ export function DealsOfTheDay() {
       </div>
       <div className="flex flex-row justify-center w-[66%] md:w-full p-[33px] sm:p-5 border-red-700 border-4 border-solid rounded-lg">
         <div className="flex flex-row md:flex-col justify-start items-center w-full mt-[5px] gap-[25px] md:gap-5">
-          <div className="h-[465px] w-[465px] sm:w-full sm:h-auto relative">
+          <div className="h-[465px] w-[465px] sm:w-full relative">
             <Img
               src="images/img_link_1_87_500x500_jpg.png"
               alt="link1eightyseve"

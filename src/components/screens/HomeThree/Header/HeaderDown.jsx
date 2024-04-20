@@ -1,45 +1,10 @@
-import React, { useState } from "react";
 import { Heading, Img } from "../../..";
 import "../../../../styles/index.css";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { RxCross2 } from "react-icons/rx";
 
 export function HeaderDown() {
-  const [showHamburgerDropdown, setShowHamburgerDropdown] = useState(false);
-
-  const toggleHamburgerDropdown = () => {
-    setShowHamburgerDropdown((prevState) => !prevState);
-  };
-
-  const closeHamburgerDropdown = () => {
-    setShowHamburgerDropdown(false);
-  };
+ 
   return (
-    <div className="wrapper flex flex-row  justify-between   relative bg-white-A700">
-      {/* Conditionally render hamburger or cross icon based on the state */}
-      <div
-        className="hidden md:block md:py-4 z-50 "
-        onClick={toggleHamburgerDropdown}
-      >
-        {showHamburgerDropdown ? <RxCross2 /> : <RxHamburgerMenu />}
-      </div>
-
-      {/* hamburger content */}
-      {showHamburgerDropdown && (
-        <div className="absolute z-10 top-8 left-0 w-[100%]">
-          <ul className="flex flex-col items-center h-[400px] justify-center gap-5 bg-[#000000e6] text-white-A700 first-letter: font-bold ">
-            <li>Home</li>
-            <li>Shop</li>
-            <li>Fruits & Vegetables</li>
-            <li>Beverages</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            <li>Trending Products</li>
-            <li className="text-orange-600">Almost Finished</li>
-          </ul>
-        </div>
-      )}
-
+    <div className="wrapper flex flex-row  justify-between   bg-white-A700">
       <div className="flex flex-row md:hidden justify-center items-center ">
         <a href="#">
           <Heading

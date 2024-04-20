@@ -1,13 +1,24 @@
-import React from "react";
-import { Heading, Img, Input, Text } from "../../..";
+import { useState } from "react";
+import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
+import { Img, Input, Text } from "../../..";
 import { CloseSVG } from "../../../../assets/images";
 import "../../../../styles/index.css";
 
 export function HeaderBottom(props) {
+  const [showHamburgerDropdown, setShowHamburgerDropdown] = useState(false);
+
+  const toggleHamburgerDropdown = () => {
+    setShowHamburgerDropdown((prevState) => !prevState);
+  };
+
+  const closeHamburgerDropdown = () => {
+    setShowHamburgerDropdown(false);
+  };
+
   return (
     <div className=" wrapper flex flex-row justify-center  py-4 border-gray-200 border-b border-solid bg-white-A700">
-      <div className="flex flex-row justify-center w-full md:px-5 max-w-[1360px]">
-        <div className="flex flex-row tablet:justify-center  justify-center xl:justify-between items-center w-full md:gap-5">
+      <div className="flex flex-row justify-center w-full  max-w-[1360px]">
+        <div className="flex flex-row relative  justify-center xl:justify-between items-center w-full md:gap-5">
           <Img
             src="images/img_link_grogin_logo_dark_png.png"
             alt="linkgrogin_one"
@@ -67,7 +78,7 @@ export function HeaderBottom(props) {
             }
             className="w-[64%]  ml-6 gap-[35px] xl:hidden md:ml-0 sm:ml-5 text-gray-600"
           />
-          <div className="flex items-center justify-between ml-5 w-[16%] xl:w-[16%] lg:w-[18%] md:w-[24%] sm:w-[30%] tablet:hidden">
+          <div className="flex items-center md:hidden justify-between ml-5 w-[16%] xl:w-[16%] lg:w-[18%] md:w-[24%] sm:w-[30%] tablet:hidden">
             {/* new 3 icons  */}
             <div className="flex flex-col items-center">
               <Img
@@ -100,6 +111,28 @@ export function HeaderBottom(props) {
               </div>
             </div>
           </div>
+          {/* Conditionally render hamburger or cross icon based on the state */}
+          <div
+            className="hidden md:block md:py-4 z-50 "
+            onClick={toggleHamburgerDropdown}
+          >
+            {showHamburgerDropdown ? <RxCross2 /> : <RxHamburgerMenu />}
+          </div>
+          {/* hamburger content */}
+          {showHamburgerDropdown && (
+            <div className="absolute z-10 top-10 left-0 w-[100%]">
+              <ul className="flex flex-col items-center h-[400px] justify-center gap-5 bg-[#000000e6] text-white-A700 first-letter: font-bold ">
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Fruits & Vegetables</li>
+                <li>Beverages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+                <li>Trending Products</li>
+                <li className="text-orange-600">Almost Finished</li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>
