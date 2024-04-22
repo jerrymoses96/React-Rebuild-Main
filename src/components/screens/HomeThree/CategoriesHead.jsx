@@ -15,6 +15,7 @@ export function CategoriesHead() {
       <Text as="p" className="!text-blue_gray-300 tracking-[-0.32px]">
         New products with updated stocks.
       </Text>
+
       <Button
         size="lg"
         rightIcon={

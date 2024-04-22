@@ -4,7 +4,7 @@ import { Button, Heading, Img, Input, Text } from "../../..";
 export function FooterTop() {
   return (
     <div className="flex flex-row md:flex-col justify-between items-start w-full md:gap-10">
-      <div className="flex flex-col items-center justify-start w-[23%] md:w-full gap-[9px]">
+      <div className="flex flex-col  justify-start w-[23%] md:w-full gap-[9px]">
         <Heading size="4xl" as="h5" className="tracking-[-0.40px]">
           Join our newsletter for £10 offs
         </Heading>
